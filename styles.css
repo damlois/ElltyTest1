@@ -65,8 +65,8 @@ body {
 }
 
 .checkbox-input:checked + .checkbox-custom {
-    background-color: #CDCDCD;
-    border-color: #CDCDCD;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #667eea;
 }
 
 .checkbox-input:checked + .checkbox-custom::after {
@@ -76,7 +76,7 @@ body {
     top: 2px;
     width: 6px;
     height: 12px;
-    border: solid #1F2128;
+    border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
