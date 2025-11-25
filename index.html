@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="selection-card">
+            <div class="option-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="all-pages" class="checkbox-input">
+                    <span class="checkbox-custom"></span>
+                    <span class="option-text">All pages</span>
+                </label>
+            </div>
+            
+            <div class="separator"></div>
+            
+            <div class="option-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="page-1" class="checkbox-input page-checkbox" value="Page 1">
+                    <span class="checkbox-custom"></span>
+                    <span class="option-text">Page 1</span>
+                </label>
+            </div>
+            
+            <div class="option-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="page-2" class="checkbox-input page-checkbox" value="Page 2">
+                    <span class="checkbox-custom"></span>
+                    <span class="option-text">Page 2</span>
+                </label>
+            </div>
+            
+            <div class="option-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="page-3" class="checkbox-input page-checkbox" value="Page 3">
+                    <span class="checkbox-custom"></span>
+                    <span class="option-text">Page 3</span>
+                </label>
+            </div>
+            
+            <div class="option-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="page-4" class="checkbox-input page-checkbox" value="Page 4">
+                    <span class="checkbox-custom"></span>
+                    <span class="option-text">Page 4</span>
+                </label>
+            </div>
+            
+            <div class="separator separator-done"></div>
+            
+            <button class="done-button" id="done-button">Done</button>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="alert-overlay" id="alert-overlay">
+        <div class="alert-modal">
+            <div class="alert-header">
+                <h2>Selected Pages</h2>
+                <button class="close-button" id="close-alert">&times;</button>
+            </div>
+            <div class="alert-content" id="alert-content">
+                <!-- Selected items will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
